@@ -4,12 +4,21 @@
  * Declare a variable called myFavoriteSong on one line and console.log the value
  * Then, using your Literals, console.log "my favorite song is..." with the song's value
  */
+let myFavoriteSong = 'Joy Ride'
+console.log(myFavoriteSong)
+console.log(`My favorite song is ${myFavoriteSong}`)
+
 
 /*
  * Prompt 2:
  *
  * Create 3 variables using let and const, then console.log each of them, using a string literal (` ${} `} in the log
  */
+
+const myName = 'Cameron';
+let myFavoriteFruit = 'watermelon';
+let numberOfDogs = 2;
+console.log(`My name is ${myName}, I have ${numberOfDogs} dogs, and my favorite fruit is ${myFavoriteFruit}`)
 
 /*
  * Prompt 3:
@@ -21,6 +30,13 @@
  *   - divide your variable by 7
  *   - calculate the remainder of dividing your variable by 2
  */
+
+let numberOfPets = 21
+console.log(numberOfPets + 5)
+console.log(numberOfPets - 8)
+console.log(numberOfPets * 3)
+console.log(numberOfPets / 7)
+console.log(numberOfPets % 2)
 
 /*
  * Prompt 4:
@@ -34,11 +50,25 @@
  * Run a console.log that says 'hello my name is..." with your fullName. 
  */
 
+let firstName = 'Cameron'
+let lastName = 'Delay'
+let fullName = (firstName + " " + lastName)
+console.log(`hello my name is ${fullName}`)
 
 /* Arrays */
 
 // Create an array of Movies, then log the 2nd movie in your array
 // Use your array methods to add a movie in to the Front of the array, then the Back of the Array, then to the 2nd index point of the array
+
+let movies = ['Matrix', 'The Godfather', 'Pretty Woman', 'Star Trek']
+console.log(movies[1])
+
+movies.unshift('Star-Wars')
+movies.push('Miss Congeniality')
+movies.splice(1, 0, 'Wonder Woman')
+// used https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice to find answer.
+console.log(movies)
+
 
 
 /*
@@ -56,6 +86,10 @@ let array3 = [
   ['Marty Feldman', ['Marty Marion']],
   ['Marty Stuart', ['Marty Janetty', ['Marty McFly'], 'Marty Robbins']]
 ];
+console.log(array1[2])
+console.log(array2[1][1])
+console.log(array3[1][1][1])
+
 
 /*
  *
@@ -63,6 +97,7 @@ let array3 = [
  */
 
 let array4 = ['a', 'b', 'c', 'd', 'e'];
+console.log(array4[array4.length - 2])
 
 /*
  *
@@ -77,9 +112,19 @@ let cathleen = ['Cathleen', 186, 'New York'];
 // Cathleen decides that Thom can't be named "Thom" anymore. Remove "Thom" from
 // the thom array and replace it with "Tom".
 
+thom.shift()
+thom.unshift('Tom')
+console.log(thom)
+
 // Karolin just had her birthday; change Karolin's array to reflect her being
 // a year older.
-
+karolin.splice(1, 1, 17)
+console.log(karolin)
 // Change Cathleen's hometown from New York to "Gotham City".
-
+cathleen.pop()
+cathleen.push('Gotham City')
+console.log(cathleen)
 // Remove "Pittsburgh" from Kristyn's array and add "Oakland".
+kristyn.pop()
+kristyn.push("Oakland")
+console.log(kristyn)
